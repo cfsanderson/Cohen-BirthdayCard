@@ -1,7 +1,13 @@
 #outside {
   z-index: 1;
   position: absolute;
-  background-color: lightgray;
+  /*background-color: linear-gradient(45deg, blue, red);*/
+  /* rgb(143, 0, 255); */
+  background:
+    linear-gradient(to bottom, rgb(143, 0, 255), rgb(98, 2, 172)),
+    url('/assets/img/fulcrum-live/fulcrum-live-globe-background-01.jpg')
+    center / cover
+    no-repeat;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -13,19 +19,19 @@
   transform: rotateY(90deg);
 }
 
-#outside-title {
-  color: black;
-  font-family: Courier;
-  font-size: 12pt;
+h1 {
+  color: rgb(202, 153, 241);
+  font-family: 'Tangerine', cursive;
+  font-size: 3em;
   text-align: center;
 }
 
-#outside-pic {
-  width: 150px;
-  height: 150px;
+.outside-pic {
+  width: 350px;
+  height: 350px;
 }
 
-#outside-help {
+.outside-help {
   color: black;
   font-family: Courier;
   font-size: 12pt;
@@ -36,25 +42,25 @@
 #inside {
   z-index: 0;
   position: absolute;
-  background-color: white;
+  background-color: rgb(213, 37, 164);
   width: 100%;
   height: 100%;
   text-align: center;
 }
 
-#inside-title {
+.inside-title {
   color: black;
   font-family: Courier;
   font-size: 12pt;
   text-align: center;
 }
 
-#inside-pic {
+.inside-pic {
   width: 50px;
   height: 150px;
 }
 
-#message {
+.message {
   color: black;
   font-family: Courier;
   font-size: 12pt;
